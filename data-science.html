@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO & Site's Description -->
+    <meta name="description"
+        content="Excellent Coaching -  For Students and anyone that needs coaching. A school with dedicated tutors, determined to help their students excel. Improve your skillsets, Improve your knowledge" />
+    <meta name="keywords"
+        content="Excellent, Excellent Coaching, Coaching, School, coaching classes, classes, school coaching, school classes" />
+        <meta name="author" content="Lotanna Kyrian A., Nino Ayodele O., Arinde Shola E. & Oshidi Jefferson O" />
+
+    <!-- Bootstrap, Font Awesome & Custom CSS -->
+    <link rel="stylesheet" href="./assests/vendors/bootstrap-5.1.3-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./assests/vendors/fontawesome-5.15.4/css/all.css" />
+    <link rel="stylesheet" href="./assests/vendors/aos/aosV2.3.1.css">
+    <link rel="stylesheet" href="./assests/css/courses.css" />
+
+    <link rel="shortcut icon" href="./assests/images/logo.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./assests/images/logo.png" />
+    <title>Excellent Coaching | Data Science</title>
+</head>
+
+<body>
+        <!-- BEGINING OF HEADER -->
+        <header id="header" class="sticky-top">
+
+            <!-------------------------BEGINING OF NAV BAR------------------>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <!-- NAV BRAND/LOGO -->
+                    <a class="navbar-brand" href="./index.html" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
+                        <img data-tilt src="./assests/images/logo.png" alt="logo" />
+                    </a>
+                    <!-- NAV BRAND/LOGO -->
+
+                    <!-- BEGING OF HAMBURGER BUTTON -->
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleMenu"
+                        aria-controls="collapsibleMenu"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span>
+                            <img src="./assests/images/hamburger.svg" alt="menu" class="img-fluid" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" />
+                        </span>
+                    </button>
+                    <!-- END OF HAMBURGER BUTTON -->
+
+                    <!-- BEGINING OF COLLAPSIBLE NAVIGATION AREA -->
+                    <div class="navbar-collapse collapse" id="collapsibleMenu">
+                        <ul class="nav navbar-nav navbar__list ms-auto">
+                            <!-- HOME NAVIGATION LINK -->
+                            <li class="nav-item navbar__item mx-auto">
+                                <a href="./index.html" class="nav-link navbar__link">
+                                    <b class="bold">Home</b>
+                                </a>
+                            </li>
+                            <!-- HOME NAVIGATION LINK -->
+
+                            <!-- ABOUT NAVIGATION LINKS -->
+                            <li class="nav-item dropdown navbar__item mx-auto">
+                                <span class="nav-link navbar__link mx-4 dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <b class="bold">About Us</b>
+                                </span>
+                                <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="./about.html">About Us</a></li>
+                                    <li><a class="dropdown-item" href="./about.html#faculties">Faculties</a></li>
+                                    <li><a class="dropdown-item" href="./index.html#testimonial">Testimonial</a></li>
+                                </ul>
+                            </li>
+                            <!-- ABOUT NAVIGATION LINKS -->
+
+                            <!-- COURSES NAVIGATION LINKS -->
+                            <li class="nav-item dropdown navbar__item mx-auto">
+                                <span class="nav-link navbar__link navbar__link-active mx-4 dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <b class="bold">Courses</b>
+                                </span>
+                                <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="./courses.html">All Courses</a></li>
+                                    <li><a class="dropdown-item" href="./business-mgt.html">Business Management</a></li>
+                                    <li><a class="dropdown-item" href="./project-mgt.html">Project Management</a></li>
+                                    <li><a class="dropdown-item" href="./artificial-intelligence.html">Artificial Intelligence</a></li>
+                                    <li><a class="dropdown-item" href="./computing-tech.html">Computing Technology</a></li>
+                                    <li><a class="dropdown-item" href="./cyber-security.html">Cyber Security</a></li>
+                                    <li><a class="dropdown-item" href="./data-science.html">Data Science</a></li>
+                                    <li"><a class="dropdown-item" href="./registration.html">Course Registration</a></li>
+                                </ul>
+                            </li>
+                            <!-- COURSES NAVIGATION LINKS -->
+
+                            <!-- CONTACT & LOCATION NAVIGATION LINKS -->
+                            <li class="nav-item navbar__item mx-auto">
+                                <a href="./contact.html" class="nav-link navbar__link">
+                                    <b class="bold">Contact Us</b>
+                                </a>
+                            </li>
+                            <li class="nav-item navbar__item mx-auto btn btn_orange" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">
+                                <a href="./contact.html#locationMap" class="nav-link navbar__link text-white">
+                                    <b class="bold">Locate Us</b>
+                                </a>
+                            </li>
+                            <!-- CONTACT & LOCATION NAVIGATION LINKS -->
+                        </ul>
+                    </div>
+                    <!-- END OF COLLAPSIBLE NAVIGATION AREA -->
+                </div>
+            </nav>
+            <!-------------------------END OF NAV BAR----------------------->
+            
+            <!-- NEWSLETTER SUBSCRIPTION TOAST MESSAGE -->
+            <section id="toast_section" class="toast-container position-absolute top-20 end-0 p-3">
+                <div class="toast align-items-center bg_theme" role="alert" id="toast" aria-live="assertive" aria-atomic="true">
+                    <div class="d-flex">
+                        <div class="toast-header mt-0">
+                            <i class="far fa-newspaper"></i>                        
+                        </div>
+                        <div class="toast-body">
+                            <p class="mb-0">
+                                <b>Thank You for subscribing to our newsletter. Please check your email for news and updaates.</b> 
+                            </p>
+                        </div>
+                        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                </div>
+            </section>
+            <!-- NEWSLETTER SUBSCRIPTION TOAST MESSAGE -->
+    
+        </header>
+        <!-- END OF HEADER -->
+    
+
+    <main id="main" class="container">
+        <!-- BEGINING OF HERO SECTION -->
+        <section id="courses_hero" class="row">
+            <div class="card col-12">
+                <div class="row">
+                    <picture class="col-sm-12 col-md-6 p-0">
+                        <source srcset="./assests/images/data-sci.jpg" type="image/svg+xml">
+                        <img src="./assests/images/data-sci.jpg" class="img-fluid rounded-start"
+                            alt="project management">
+                    </picture>
+                    <div class="col-sm-12 col-md-6 m-auto">
+                        <div class="card-body">
+                            <h1 class="card-title pb-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                                <b>Data Science</b>
+                            </h1>
+                            <p class="card-text" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                                Data science is an interdisciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from noisy, structured and unstructured data, and apply knowledge and actionable insights from data across a broad range of application domains.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END OF HERO SECTION -->
+
+        <!-- BEGINING OF OVERVIEW SECTION -->
+        <section id="info_section" class="row my-5">
+            <div class="col-md-8 col-sm-12 p-4 info_section-overview">
+
+                <!-- BEGINING OF OVERVIEW ARTICLE -->
+                <article>
+                    <h2 class="h4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                        <b>Overview</b>
+                    </h2>
+                    <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                        The demand for data scientists is ever rising. A report by Harvard Business Review suggests that the shortage of data scientists has become a serious constraint in certain sectors, leading the authors to claim Data Scientist as the Sexiest Job of the 21st Century.
+                    </p>
+                    <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+                        Data Scientists carry out applied research to create innovative data-driven solutions to business problems. Usually, they work with large, complex, varied, and unstructured data sets that are not suitable for using traditional data analysis approaches and techniques. This programme is specifically designed to enable you to develop this in-depth technical knowledge that will allow you to discover new data-driven solutions.
+                    </p>
+                    <h2 class="h4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                        <b>Key Facts</b>
+                    </h2>
+                    <p>
+                    <ul>
+                        <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700">Develop in-demand skills to work in a range of roles in the IT industry</li>
+                        <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">Enhance your knowledge in the application of programming language, big data and machine learning on cloud</li>
+                        <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">Designed to meet the accreditation criteria of BCS, the Chartered Institute for IT for the purposes of meeting the academic requirement for registration as a Chartered IT Professional
+                        </li>
+                    </ul>
+                    </p>
+                </article>
+                <!-- END OF OVERVIEW ARTICLE -->
+
+                <!-- BEGINING OF ACCORDION -->
+                <div class="accordion accordion-flush" id="outterAccordion">
+                    <div class="accordion-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
+                        <h3 class="accordion-header" id="outterAccordionHeadingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#outterAccordionCollapseOne" aria-expanded="false"
+                                aria-controls="outterAccordionCollapseOne">
+                                <h4 class="h5">
+                                    <b>About this course</b>
+                                </h4>
+                            </button>
+                        </h3>
+                        <div id="outterAccordionCollapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="outterAccordionHeadingOne" data-bs-parent="#outterAccordion">
+                            <div class="accordion-body">
+                                <h5 class="h6">
+                                    <b>What will I study?</b>
+                                </h5>
+                                <p>
+                                    To accelerate your learning, you will be exposed to theories, methods, tools, and technologies (including SQL, MySQL, Python, R language or similar) relating to the design, development and testing of data science applications for business intelligence.
+                                </p>
+                                <p>
+                                    You will train and deploy distributed machine learning models using a cloud-based platform such as Google Cloud, Microsoft Azure or AWS or similar and machine learning technology using TensorFlow. You will also be exposed to the fundamental concepts, principles, technologies, and techniques of big data analytics.
+                                </p>
+                                <p>
+                                    You will be able to apply this knowledge and skill in your context, and critically analyse the implementation and recommend future improvements. Recognising that information governance and cyber security are critical to the adoption and use of computing systems in businesses and organisations, you will also cover fundamental concepts, principles, techniques and tools of information governance and cyber security.
+                                </p>
+                                <h5 class="h6">
+                                    <b>How will I be taught and accessed?</b>
+                                </h5>
+                                <p>
+                                <ul>
+                                    <li>
+                                        Teaching is delivered through a mix of lectures, workshops, labs, seminars and tutorials, totalling between 10-12 hours per week.
+                                    </li>
+                                    <li>You’re expected to engage in independent study and self-directed learning, around 30-32 hours per week.</li>
+                                    <li>
+                                        The programme is 100% assessed through coursework, including critical report writing, portfolio, projects and a physical artefact such as a programme or a database.
+                                    </li>
+                                    <li>
+                                        Taught by experienced lecturers and academics who use their industry experience to demonstrate how theories translate into real-life situations.
+                                    </li>
+                                    <li>
+                                        Technology-enhanced learning is embedded throughout the course to guide your preparation for seminars and independent research
+                                    </li>
+                                    <li>
+                                        Benefit from weekly academic support sessions designed to build your ability and confidence as an academic learner
+                                    </li>
+                                    <li>
+                                        You will be assigned a guidance tutor at induction who you will meet with regularly during your studies
+                                    </li>
+                                </ul>
+                                </p>
+                                <h5 class="h6">
+                                    <b>Career and further study</b>
+                                </h5>
+                                <p>
+                                    This master’s programme has been designed to ensure that graduates from the programme will be equipped to work in a variety of careers in the cyber security/IT industry or to progress to academic or research-orientated careers.
+                                </p>
+                                <p>
+                                    Upon successfully completing your course, you may undertake further professional development and training through Professional Pathways programmes
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1100">
+                        <h3 class="accordion-header" id="outterAccordionHeadingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#outterAccordionCollapseTwo" aria-expanded="false"
+                                aria-controls="outterAccordionCollapseTwo">
+                                <h4 class="h5">
+                                    <b>Modules/Subjects (What You'll Learn)</b>
+                                </h4>
+                            </button>
+                        </h3>
+                        <div id="outterAccordionCollapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="outterAccordionHeadingTwo" data-bs-parent="#outterAccordion">
+                            <div class="accordion-body">
+                                <!-- BEGINING OF INNER ACCORDION -->
+                                <div class="accordion accordion-flush modules" id="innerAccordion">
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="innerAccordionHeadingOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#innerAccordionHeadingCollapseOne" aria-expanded="false"
+                                                aria-controls="innerAccordionHeadingCollapseOne">
+                                                <h4 class="h5">
+                                                    <b class="heading">Regression and Machine Learning</b>
+                                                </h4>
+                                            </button>
+                                        </h3>
+                                        <div id="innerAccordionHeadingCollapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="innerAccordionHeadingOne" data-bs-parent="#innerAccordion">
+                                            <div class="accordion-body py-4">
+                                                <p>
+                                                    This course will equip you with the theoretical and algorithmic basis for understanding learning systems and the associated issues with very large datasets/data dimensionalities. You will be introduced to algorithmic approaches to learning from exemplar data and will learn the process of representing training data within appropriate feature spaces for the purposes of classification.
+                                                </p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="innerAccordionHeadingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#innerAccordionHeadingCollapseTwo" aria-expanded="false"
+                                                aria-controls="innerAccordionHeadingCollapseTwo">
+                                                <h4 class="h5">
+                                                    <b class="heading"> Data Visualisation</b>
+                                                </h4>
+                                            </button>
+                                        </h3>
+                                        <div id="innerAccordionHeadingCollapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="innerAccordionHeadingTwo" data-bs-parent="#innerAccordion">
+                                            <div class="accordion-body py-4">
+                                                <p>
+                                                    In this module, you will develop new knowledge and skills in leadership in a digital context.  These capabilities are essential for your career development as they enable you to become competent at the visioning, development and deployment of technological strategies and responses to challenges and opportunities in complex organisational environments.
+                                                </p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="innerAccordionHeadingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#innerAccordionHeadingCollapseThree"
+                                                aria-expanded="false"
+                                                aria-controls="innerAccordionHeadingCollapseThree">
+                                                <h4 class="h5">
+                                                    <b class="heading">Research Methods for Professional Practice</b>
+                                                </h4>
+                                            </button>
+                                        </h3>
+                                        <div id="innerAccordionHeadingCollapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="innerAccordionHeadingThree"
+                                            data-bs-parent="#innerAccordion">
+                                            <div class="accordion-body py-4">
+                                                <p>
+                                                    This module is designed to ensure you have the skills and knowledge to complete a postgraduate research project, relevant to Big Data and Data Science Technology and your career or future aspirations. As such, you will work closely with tutors and our careers and professional development specialists to consider the future opportunities post completion of your degree.  You will develop a career plan and reflect on your learning considering how your learning from this module and the programme can accelerate the achievement of this plan. 
+                                                </p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="innerAccordionHeadingFour">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#innerAccordionHeadingCollapseFour"
+                                                aria-expanded="false" aria-controls="innerAccordionHeadingCollapseFour">
+                                                <h4 class="h5">
+                                                    <b class="heading">Machine Learning on Cloud</b>
+                                                </h4>
+                                            </button>
+                                        </h3>
+                                        <div id="innerAccordionHeadingCollapseFour" class="accordion-collapse collapse"
+                                            aria-labelledby="innerAccordionHeadingFour"
+                                            data-bs-parent="#innerAccordion">
+                                            <div class="accordion-body">
+                                                <p>
+                                                    The module aims to provide you with a critical review of the theory and practice of machine learning on the cloud platform. You will critically analyse the capabilities of machine learning and apply its methods and techniques to discover patterns for trends analysis.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="innerAccordionHeadingFive">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#innerAccordionHeadingCollapseFive"
+                                                aria-expanded="false" aria-controls="innerAccordionHeadingCollapseFive">
+                                                <h4 class="h5">
+                                                    <b class="heading">Big Data Analytics</b>
+                                                </h4>
+                                            </button>
+                                        </h3>
+                                        <div id="innerAccordionHeadingCollapseFive" class="accordion-collapse collapse"
+                                            aria-labelledby="innerAccordionHeadingFive"
+                                            data-bs-parent="#innerAccordion">
+                                            <div class="accordion-body">
+                                                <p>
+                                                    This module provides you with in-depth coverage of fundamental concepts and principles of big data and the analytical techniques and technologies used for big data analytics.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END OF INNER ACCORDION -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200">
+                        <h3 class="accordion-header" id="outterAccordionHeadingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#outterAccordionCollapseThree" aria-expanded="false"
+                                aria-controls="outterAccordionCollapseThree">
+                                <h4 class="h5">
+                                    <b>How to apply or find out more</b>
+                                </h4>
+                            </button>
+                        </h3>
+                        <div id="outterAccordionCollapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="outterAccordionHeadingThree" data-bs-parent="#outterAccordion">
+                            <div class="accordion-body">
+                                <h5 class="h6">
+                                    <b>How to find out more</b>
+                                </h5>
+                                <p>
+                                    Enquire now to find out more information about the course, studying with us, the
+                                    application process, and to ask any other questions you may have.
+                                </p>
+                                <p><b>Click The Button Below to Apply/Register for this course</b></p>
+                                <a class="btn btn_orange mb-4 py-3 px-3" href="./registration.html">Register Here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF ACCORDION -->
+            </div>
+
+            <!-- BEGINING OF OVERVIEW CARD RIGHT -->
+            <div class="col-md-4 col-sm-12" id="card_div">
+                <div class="card">
+                    <h4 class="card-header" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                        <b>Course Information</b>
+                    </h4>
+
+                    <!-- DOWNLOAD PROSPECTUS -->
+                    <div class="card-body">
+                        <div class="row">
+                            <ul class="list-unstyled">
+                                <li class="mt-2 mb-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                                    <h6>
+                                        <b>Level of study:</b>
+                                    </h6>
+                                    <p>Post-graduate</p>
+                                </li>
+                                <li class="my-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+                                    <h6>
+                                        <b>2021/22 Tuition fee:</b>
+                                    </h6>
+                                    <p class="mb-0">UK/Home Fee: £7,350</p>
+                                    <p>International Fee: £16,000</p>
+                                </li>
+                                <li class="my-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                                    <h6>
+                                        <b>Entry requirements:</b>
+                                    </h6>
+                                    <p class="mb-0">
+                                        Minimum of GCSE or Equivalent.
+                                    </p>
+                                </li>
+                                <li class="my-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700">
+                                    <h6>
+                                        <b>Mode of study:</b>
+                                    </h6>
+                                    <p class="mb-0">
+                                        Full-time classroom
+                                    </p>
+                                </li>
+                                <li class="my-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+                                    <h6>
+                                        <b>Duration:</b>
+                                    </h6>
+                                    <p class="mb-0">
+                                        1 year
+                                    </p>
+                                </li>
+                                <li class="my-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">
+                                    <h6>
+                                        <b>Assessment methods:</b>
+                                    </h6>
+                                    <h6 class="heading"></h6>
+                                    <p class="mb-0">
+                                        Coursework
+                                    </p>
+                                </li>
+                                <li class="my-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
+                                    <h6>
+                                        <b>Scholarship or bursaries:</b>
+                                    </h6>
+                                    <p class="mb-0">
+                                        Available
+                                    </p>
+                                </li>
+                                <li class="my-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1100">
+                                    <h6>
+                                        <b>Payment plan:</b>
+                                    </h6>
+                                    <p class="mb-0">
+                                        Available
+                                    </p>
+                                </li>
+                                <li class="my-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200">
+                                    <h6>
+                                        <b>Starts:</b>
+                                    </h6>
+                                    <p class="mb-0">
+                                        January, May, September
+                                    </p>
+                                </li>
+                            </ul>
+
+                            <!-- DOWNLOAD PROSPECTUS -->
+                            <div class="overviewCard-btn_div mb-3 px-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200">
+                                <div class="mt-3 form-control btn btn_orange">
+                                    <a class="text-white nav-link" href="./assests/downloads/Excellent-Coaching-Data-Science.docx" download="Excellent-Coaching-Data-Sci-Prospectus">Download Prospectus</a>
+                                </div>
+                            </div>
+                            <!-- DOWNLOAD PROSPECTIS -->
+                        </div>
+                    </div>
+                    <!-- DOWNLOAD PROSPECTUS -->
+                </div>
+            </div>
+            <!-- END OF OVERVIEW CARD RIGHT -->
+            
+        </section>
+        <!-- END OF OVERVIEW SECTION -->
+
+    </main>
+
+    <!-- BEGINING OF FOOTER -->
+    <footer id="footer" class="container-fluid">
+        <div class="container">
+            <section class="pt-5 pb-2 my-auto">
+                <div class="row g-5">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="row text-center">
+                            <!-- QUICK NAVIGATION LINKS -->
+                            <div class="col-6">
+                                <h5 class="my-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                                    <b>QU<span class="uLine_orange">ICK LIN</span>KS</b>
+                                </h5>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item mb-4"><a href="./index.html" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">Home</a></li>
+                                    <li class="nav-item mb-4"><a href="./about.html" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">About Us</a></li>
+                                    <li class="nav-item mb-4"><a href="./computing-tech.html" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Courses</a></li>
+                                    <li class="nav-item mb-4"><a href="./registration.html" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">Register</a></li>
+                                    <li class="nav-item mb-4">
+                                        <a href="./about.html#faculties" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700">Faculties</a>
+                                    </li>
+                                    <li class="nav-item mb-4"><a href="./contact.html" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">Contact Us</a></li>
+                                    <li class="nav-item mb-4">
+                                        <a href="./contact.html#locationMap" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">Locate Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- QUICK NAVIGATION LINKS -->
+
+                            <!-- COURSES LINKS -->
+                            <div class="col-6">
+                                <h5 class="my-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                                    <b>OU<span class="uLine_orange">R COURS</span>ES</b>
+                                </h5>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item mb-4"><a href="./courses.html" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">All Courses</a></li>
+                                    <li class="nav-item mb-4">
+                                        <a href="./business-mgt.html" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">Business Management</a>
+                                    </li>
+                                    <li class="nav-item mb-4">
+                                        <a href="./project-mgt.html" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Project Management</a>
+                                    </li>
+                                    <li class="nav-item mb-4">
+                                        <a href="./artificial-intelligence.html" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">Artificial Intelligence</a>
+                                    </li>
+                                    <li class="nav-item mb-4">
+                                        <a href="./computing-tech.html" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700">Computing Technology</a>
+                                    </li>
+                                    <li class="nav-item mb-4">
+                                        <a href="./cyber-security.html" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">Cyber Security</a>
+                                    </li>
+                                    <li class="nav-item mb-4">
+                                        <a href="./data-science.html" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">Data Science</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- COURSES LINKS -->
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6">
+                        <!-- NEWSLETTER SUBSCRIBE -->
+                        <form class="form-row">
+                            <h5 class="my-4 text-center" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                                <b>Subscrib<span class="uLine_orange">e To Our N</span>ewsletter</b>
+                            </h5>
+                            <p class="nav_text mb-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Monthly digest of whats new and exciting from us.</p>
+                            <div class="d-flex w-100 gap-2">
+                                <label for="newsletter" class="visually-hidden" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">Email address</label>
+                                <input id="newsletter" type="text" class="mb-4 form-control" placeholder="Email address" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700" />
+                                <button class="btn btn_orange text-white mb-4" id="toastBtn" type="button" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">Subscribe</button>
+                            </div>
+
+                            <!-- NEWSLETTER SUBSCRIPTION TOAST MESSAGE -->
+                            <section id="toast_section" class="toast-container position-absolute bottom-0 start-0 p-3">
+                                <div class="toast align-items-center bg_theme" role="alert" id="toast" aria-live="assertive" aria-atomic="true">
+                                    <div class="d-flex">
+                                        <div class="toast-header mt-0">
+                                            <i class="far fa-newspaper"></i>
+                                        </div>
+                                        <div class="toast-body">
+                                            <p class="mb-0">
+                                                <b>Thank You for subscribing to our newsletter. Please check your email for news and updaates.</b>
+                                            </p>
+                                        </div>
+                                        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- NEWSLETTER SUBSCRIPTION TOAST MESSAGE -->
+                        </form>
+                        <!-- NEWSLETTER SUBSCRIBE -->
+
+                        <!-- SOCIAL MEDIA LINKS -->
+                        <div class="row py-4 text-center">
+                            <h5 class="my-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">
+                                <b class="text-muted">connect <span class="uLine_orange">with us on so</span>cial media</b>
+                            </h5>
+
+                            <!-- BEGINING OF MAIL  US, INSTAGRAM & FACEBOOK LINKS -->
+                            <ul class="col-sm-12 col-md-6 list-unstyled socials d-flex flex-wrap justify-content-around align-items-center">
+                                <li class="mx-2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
+                                    <a class="social_link" href="mailto:excellentcoaching@gmail.com?subject=Enquiries">
+                                        <i class="far fa-envelope"></i>
+                                        <small class="d-block text-gray">
+                                            <b>Mail Us</b>
+                                        </small>
+                                    </a>
+                                </li>
+                                <li class="mx-2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1100">
+                                    <a class="social_link" href="https://instagram.com/mayne_eltana" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-instagram"></i>
+                                        <small class="d-block text-gray">
+                                            <b>Instagram</b>
+                                        </small>
+                                    </a>
+                                </li>
+                                <li class="mx-2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200">
+                                    <a class="social_link" href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-facebook-f"></i>
+                                        <small class="d-block text-gray">
+                                            <b>Facebook</b>
+                                        </small>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- END OF MAIL  US, INSTAGRAM & FACEBOOK LINKS -->
+
+                            <!-- BEGINING OF CALL  US, TWITTER & DISCORD LINKS -->
+                            <ul class="col-sm-12 col-md-6 list-unstyled socials d-flex flex-wrap justify-content-around align-items-center">
+                                <li class="mx-2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300">
+                                    <a class="social_link" href="tel:+2348066678889">
+                                        <i class="fas fa-phone"></i>
+                                        <small class="d-block text-gray">
+                                            <b>Call Us</b>
+                                        </small>
+                                    </a>
+                                </li>
+                                <li class="mx-2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400">
+                                    <a class="social_link" href="https://twitter.com/mayne_eltana" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-twitter"></i>
+                                        <small class="d-block text-gray">
+                                            <b>Twitter</b>
+                                        </small>
+                                    </a>
+                                </li>
+                                <li class="mx-2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500">
+                                    <a class="social_link" href="https://discord.com/" target="blank" rel="noreferrer rnoopener">
+                                        <i class="fab fa-discord"></i>
+                                        <small class="d-block text-gray">
+                                            <b>Discord</b>
+                                        </small>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- END OF CALL  US, TWITTER & DISCORD LINKS -->
+                        </div>
+                        <!-- SOCIAL MEDIA LINKS -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- FOOTER SMALL & COPYRIGHT -->
+        <div class="py-4 mt-4 border-top text-center footer_small">
+            <p class="pt-4">
+                &copy; 2021 <span><a class="footer_org" href="./index.html">Excellent Coaching</a></span
+                >, Inc. All rights reserved.
+            </p>
+        </div>
+        <!-- FOOTER SMALL & COPYRIGHT -->
+    </footer>
+    <!-- END OF FOOTER -->
+
+    <script src="./assests/vendors/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+    <script src="./assests/vendors/popper.Js-2.x/popper.js"></script>
+    <script src="./assests/vendors/fontawesome-5.15.4/js/all.js"></script>
+    <script src="./assests/vendors/JQuery/jquery-3.5.1/jquery-v3.5.1.js"></script>
+    <script src="./assests/vendors/aos/aosV2.3.1.js"></script>
+    <script src="./assests/vendors/tilt.js-master/dest/tilt.jquery.js"></script>
+    <script src="./assests/scripts/index.js"></script>
+</body>
+
+</html>

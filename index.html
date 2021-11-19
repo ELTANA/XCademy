@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- SEO & Site's Description -->
+        <meta
+            name="description"
+            content="Excellent Coaching -  For Students and anyone that needs coaching. A school with dedicated tutors, determined to help their students excel. Improve your skillsets, Improve your knowledge"
+        />
+        <meta name="keywords" content="Excellent, Excellent Coaching, Coaching, School, coaching classes, classes, school coaching, school classes" />
+        <meta name="author" content="Lotanna Kyrian A., Nino Ayodele O., Arinde Shola E. & Oshidi Jefferson O" />
+
+        <!-- Bootstrap, Font Awesome, Swiper & Custom CSS -->
+        <link rel="stylesheet" href="./assests/vendors/bootstrap-5.1.3-dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="./assests/vendors/fontawesome-5.15.4/css/all.css" />
+        <link rel="stylesheet" href="./assests/vendors/aos/aosV2.3.1.css" />
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" /> -->
+        <link rel="stylesheet" href="./assests/vendors/swiper-Js/swiper-Js.css" />
+        <link rel="stylesheet" href="./assests/css/style.css" />
+        <link rel="stylesheet" href="./assests/css/testimonial.css" />
+
+        <!-- Page Title and X-Icons -->
+        <link rel="shortcut icon" href="./assests/images/logo.png" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="./assests/images/logo.png" />
+        <title>Excellent Coaching | Home</title>
+    </head>
+
+    <body>
+        <!--------- BEGINING OF INTRO VIDEO SECTION ------------------>
+        <header id="header">
+            <section class="intro">
+                <div id="logo-div">
+                    <img data-tilt src="./assests/images/logo.png" alt="logo" />
+                </div>
+                <div id="more_info">
+                    <a class="intro-arrow" href="#main">
+                        <i class="fas fa-angle-double-down"></i>
+                    </a>
+                    <a class="intro-text" href="#main">
+                        <span>View More</span>
+                    </a>
+                </div>
+                <video class="intro-vid" onloadedmetadata="this.play = true" autoplay muted loop>
+                    <source src="./assests/videos/lectureHall.mp4" type="video/mp4" />
+                </video>
+            </section>
+            <!----------- END OF INTRO VIDEO SECTION ------------------>
+        </header>
+
+        <!-------------------------BEGINING OF NAV BAR------------------>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <!-- NAV BRAND/LOGO -->
+                <a class="navbar-brand" href="./index.html" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
+                    <img data-tilt src="./assests/images/logo.png" alt="logo" />
+                </a>
+                <!-- NAV BRAND/LOGO -->
+
+                <!-- BEGING OF HAMBURGER BUTTON -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleMenu"
+                    aria-controls="collapsibleMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span>
+                        <img src="./assests/images/hamburger.svg" alt="menu" class="img-fluid" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" />
+                    </span>
+                </button>
+                <!-- END OF HAMBURGER BUTTON -->
+
+                <!-- BEGINING OF COLLAPSIBLE NAVIGATION AREA -->
+                <div class="navbar-collapse collapse" id="collapsibleMenu">
+                    <ul class="nav navbar-nav navbar__list ms-auto">
+                        <!-- HOME NAVIGATION LINK -->
+                        <li class="nav-item navbar__item mx-auto">
+                            <a href="./index.html" class="nav-link navbar__link navbar__link-active">
+                                <b class="bold">Home</b>
+                            </a>
+                        </li>
+                        <!-- HOME NAVIGATION LINK -->
+
+                        <!-- ABOUT NAVIGATION LINKS -->
+                        <li class="nav-item dropdown navbar__item mx-auto">
+                            <span class="nav-link navbar__link mx-4 dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <b class="bold">About Us</b>
+                            </span>
+                            <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./about.html">About Us</a></li>
+                                <li><a class="dropdown-item" href="./about.html#faculties">Faculties</a></li>
+                                <li><a class="dropdown-item" href="./index.html#testimonial">Testimonial</a></li>
+                            </ul>
+                        </li>
+                        <!-- ABOUT NAVIGATION LINKS -->
+
+                        <!-- COURSES NAVIGATION LINKS -->
+                        <li class="nav-item dropdown navbar__item mx-auto">
+                            <span class="nav-link navbar__link mx-4 dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <b class="bold">Courses</b>
+                            </span>
+                            <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./courses.html">All Courses</a></li>
+                                <li><a class="dropdown-item" href="./business-mgt.html">Business Management</a></li>
+                                <li><a class="dropdown-item" href="./project-mgt.html">Project Management</a></li>
+                                <li><a class="dropdown-item" href="./artificial-intelligence.html">Artificial Intelligence</a></li>
+                                <li><a class="dropdown-item" href="./computing-tech.html">Computing Technology</a></li>
+                                <li><a class="dropdown-item" href="./cyber-security.html">Cyber Security</a></li>
+                                <li><a class="dropdown-item" href="./data-science.html">Data Science</a></li>
+                                <li"><a class="dropdown-item" href="./registration.html">Course Registration</a></li>
+                            </ul>
+                        </li>
+                        <!-- COURSES NAVIGATION LINKS -->
+
+                        <!-- CONTACT & LOCATION NAVIGATION LINKS -->
+                        <li class="nav-item navbar__item mx-auto">
+                            <a href="./contact.html" class="nav-link navbar__link">
+                                <b class="bold">Contact Us</b>
+                            </a>
+                        </li>
+                        <li class="nav-item navbar__item mx-auto btn btn_orange" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">
+                            <a href="./contact.html#locationMap" class="nav-link navbar__link text-white">
+                                <b class="bold">Locate Us</b>
+                            </a>
+                        </li>
+                        <!-- CONTACT & LOCATION NAVIGATION LINKS -->
+                    </ul>
+                </div>
+                <!-- END OF COLLAPSIBLE NAVIGATION AREA -->
+            </div>
+        </nav>
+        <!-------------------------END OF NAV BAR----------------------->
+
+        <!--------- BEGINING OF MAIN -------------------->
+        <main id="main">
+            <!-- BEGINING OF HERO SECTION -->
+            <article id="hero" class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 hero_text order-last">
+                        <h1 class="hero_heading"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                            Welcome To 
+                            <span class="hero_schName" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">Excellent Coaching,</span>
+                            <span class="hero_loc" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">London Campus</span>
+                        </h1>
+                        <p class="d-none d-md-block hero_p" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                            Whether you are looking for a full-time or part-time programme, choose from a range of Business, Computing, Cyber Security, Project Management and Technology focused
+                            programmes at our London Campus.
+                        </p>
+                        <p class="d-none d-lg-block hero_p" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700">
+                            Ideally situated just minutes away from Liverpool Street station, benefit from studying in a location where the financial district meets the heart of London’s digital and
+                            technology sector. This offers you an excellent base from which to take full advantage of all that studying in one of the world’s leading cities. We offer carreer
+                            guidiance, work experience and networking opportunities.
+                        </p>
+                        <p class="d-none d-lg-block hero_p" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+                            With over <b><i>a Decade of expertise in IT training, Excellent Coaching is sure to build careers</i></b
+                            >. Additional to 10 years of presence, NCC Education and Industry Focused trainings, We offers valuable qualifications which are recognized globally.
+                        </p>
+                        <p class="d-md-none d-lg-block hero_p" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">
+                            We Lead in Industry-Focused training courses in Information Technology like; Artificial Intelligence, Computing Technology, Cyber Security, Data Science and Management
+                            Courses like; Business and Project Management. Our students get dual-diploma which is valued by employers and UK universities as well.
+                        </p>
+                        <div class="col-12 pt-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+                            <a class="btn text-white btn_orange px-4 py-2 hero_btn" href="./courses.html"> Find Out More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 hero_img order-first" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                        <img src="./assests/images/school_building.jpg" alt="school building" class="img-fluid" />
+                    </div>
+                </div>
+            </article>
+            <!-- END OF HERO SECTION -->
+
+            <!-- BEGINING OF AT A GLANCE IMAGE CARDS SECTION -->
+            <section id="image_cards" class="container">
+                <div class="row">
+                    <div class="col-12 py-5" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                        <h2 class="hero_title text-center">MOR<span class="uLine_orange">E AT A GLA</span>NCE</h2>
+                    </div>
+                    <div class="col-12">
+                        <div class="row g-4">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                                <div class="content" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                                    <img class="content-image image-fluid w-100" src="./assests/images/about-card.jpg" />
+                                    <div class="content-overlay"></div>
+                                    <div class="flex-column justify-content-around align-items-center content-details fadeIn-bottom">
+                                        <h2 class="content-title">About Us</h2>
+                                        <p class="p-3">Excellent Coaching is a world class educational institute located in the heart of London Metropolitan city.</p>
+                                        <p class="content-text lead">
+                                            <a href="./about.html">View More</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                                <div class="content" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+                                    <img class="content-image image-fluid w-100" src="./assests/images/students.jpg" />
+                                    <div class="content-overlay"></div>
+                                    <div class="flex-column justify-content-around align-items-center content-details fadeIn-bottom">
+                                        <h2 class="content-title">Courses</h2>
+                                        <p class="p-3">
+                                            Excellent Coaching’s London Campus offers industry-focused IT and Management courses amid the buzz of London’s business and financial district.
+                                        </p>
+                                        <p class="content-text lead">
+                                            <a href="./artificial-intelligence.html">View More</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                                <div class="content" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                                    <img class="content-image image-fluid w-100" src="./assests/images/graduate.jpg" />
+                                    <div class="content-overlay"></div>
+                                    <div class="flex-column justify-content-around align-items-center content-details fadeIn-bottom">
+                                        <h2 class="content-title">Testimonial</h2>
+                                        <p class="p-3"><b>Our Success stories;</b> See what our Students and graduates from different parts of the world have to say about Us.</p>
+                                        <p class="content-text lead">
+                                            <a href="./index.html#testimonial">View More</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                                <div class="content" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700">
+                                    <img class="content-image image-fluid w-100" src="./assests/images/faculty.jpg" />
+                                    <div class="content-overlay"></div>
+                                    <div class="flex-column justify-content-around align-items-center content-details fadeIn-bottom">
+                                        <h2 class="content-title">Faculties</h2>
+                                        <p class="p-3">Our Faculties are industry-focused and better equipped to help you in reaching your career goals.</p>
+                                        <p class="content-text lead">
+                                            <a href="./about.html#faculties">View More</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END OF AT A GLANCE IMAGE CARDS SECTION -->
+
+            <!-- BEGINING OF TESTMONIAL SECTION -->
+            <section class="container-fluid pt-3" id="testimonial">
+                <h2 class="testimonial_title pt-5 text-center" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">TES<span class="uLine_orange">TIMON</span>IAL</h2>
+                <div class="row testimonial-slider" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+                    <div class="col testimonial-slider__wrp swiper-wrapper">
+                        <div class="testimonial-slider__item swiper-slide">
+                            <div class="testimonial-slider__img">
+                                <img src="./assests/images/testimonials/testimonial-eltana.jpg" alt="" />
+                            </div>
+                            <div class="testimonial-slider__content">
+                                <span class="testimonial-slider__code">
+                                    <p><b>Tesla</b></p>
+                                </span>
+                                <div class="testimonial-slider__title p-0">
+                                    <p class="lead">Automotive Security Engineer</p>
+                                </div>
+                                <div class="testimonial-slider__text">
+                                    <p>
+                                        It's been such a stimulating experience at Excellent Coaching. You get to learn so much about cyber security and emerging technologies, with tremendous amounts
+                                        of resources at your disposal.
+                                    </p>
+                                </div>
+                                <p class="testimonial-slider__button"><b>Lotanna Kyrian A.</b></p>
+                            </div>
+                        </div>
+                        <div class="testimonial-slider__item swiper-slide">
+                            <div class="testimonial-slider__img">
+                                <img src="./assests/images/testimonials/testimonial-1.jpg" alt="" />
+                            </div>
+                            <div class="testimonial-slider__content">
+                                <span class="testimonial-slider__code">
+                                    <p><b>Oracle Inc.</b></p>
+                                </span>
+                                <div class="testimonial-slider__title p-0">
+                                    <p class="lead">Data Visualization Scientist</p>
+                                </div>
+                                <div class="testimonial-slider__text">
+                                    <p>The city is great, the Excellent Coaching is very stimulating, open and bright and there are always lots of people around, and the staff here are amazing.</p>
+                                </div>
+                                <p class="testimonial-slider__button"><b>Christina Milan</b></p>
+                            </div>
+                        </div>
+                        <div class="testimonial-slider__item swiper-slide">
+                            <div class="testimonial-slider__img">
+                                <img src="./assests/images/testimonials/testimonial-shola.jpeg" alt="" />
+                            </div>
+                            <div class="testimonial-slider__content">
+                                <span class="testimonial-slider__code">
+                                    <p><b>Facebook</b></p>
+                                </span>
+                                <div class="testimonial-slider__title p-0">
+                                    <p class="lead">Software Developer</p>
+                                </div>
+                                <div class="testimonial-slider__text">
+                                    <p>
+                                        It's been such a stimulating experience at Excellent Coaching. You get to learn so much about cyber security and emerging technologies, with tremendous amounts
+                                        of resources at your disposal.
+                                    </p>
+                                </div>
+                                <p class="testimonial-slider__button"><b>Shola Arinde E.</b></p>
+                            </div>
+                        </div>
+                        <div class="testimonial-slider__item swiper-slide">
+                            <div class="testimonial-slider__img">
+                                <img src="./assests/images/testimonials/testimonial-2.jpg" alt="" />
+                            </div>
+                            <div class="testimonial-slider__content">
+                                <span class="testimonial-slider__code">
+                                    <p><b>Schlumberger</b></p>
+                                </span>
+                                <div class="testimonial-slider__title p-0">
+                                    <p class="lead">Senior Project Manager</p>
+                                </div>
+                                <div class="testimonial-slider__text">
+                                    <p>
+                                        Excellent Coaching is the BEST thing that happened to me. The affordable cost of the course and the fact that I could transfer my credits from previous studies
+                                        really made Excellent Coachinhg stand out.
+                                    </p>
+                                </div>
+                                <p class="testimonial-slider__button"><b>Stephanie Mena</b></p>
+                            </div>
+                        </div>
+                        <div class="testimonial-slider__item swiper-slide">
+                            <div class="testimonial-slider__img">
+                                <img src="./assests/images/testimonials/testimonial-3.jpg" alt="" />
+                            </div>
+                            <div class="testimonial-slider__content">
+                                <span class="testimonial-slider__code">
+                                    <p><b>Meta Inc.</b></p>
+                                </span>
+                                <div class="testimonial-slider__title p-0">
+                                    <p class="lead">Software Engineer</p>
+                                </div>
+                                <div class="testimonial-slider__text">
+                                    <p>
+                                        The staff are very supportive and that was important as I was applying from overseas. The facilities offer a quiet and supportive place to study and the
+                                        enviroment is lively with lots of activities.
+                                    </p>
+                                </div>
+                                <p class="testimonial-slider__button"><b>Vermont Ceaser</b></p>
+                            </div>
+                        </div>
+                        <div class="testimonial-slider__item swiper-slide">
+                            <div class="testimonial-slider__img">
+                                <img src="./assests/images/testimonials/testimonial-4.jpg" alt="" />
+                            </div>
+                            <div class="testimonial-slider__content">
+                                <span class="testimonial-slider__code">
+                                    <p><b>Trump & Co. Inc.</b></p>
+                                </span>
+                                <div class="testimonial-slider__title p-0">
+                                    <p class="lead">Luxury Business Manager</p>
+                                </div>
+                                <div class="testimonial-slider__text">
+                                    <p>
+                                        I already landed a job in Berlin before graduating. I would recommend Excellent Coaching due to the multicultural environment and as a way to enter the European
+                                        labour market.
+                                    </p>
+                                </div>
+                                <p class="testimonial-slider__button"><b>Maya Kent</b></p>
+                            </div>
+                        </div>
+                        <div class="testimonial-slider__item swiper-slide">
+                            <div class="testimonial-slider__img">
+                                <img src="./assests/images/testimonials/testimonial-5.jpg" alt="" />
+                            </div>
+                            <div class="testimonial-slider__content">
+                                <span class="testimonial-slider__code">
+                                    <p><b>Microsoft Inc.</b></p>
+                                </span>
+                                <div class="testimonial-slider__title p-0">
+                                    <p class="lead">Artificial Intelligence Engineer</p>
+                                </div>
+                                <div class="testimonial-slider__text">
+                                    <p>
+                                        Excellent Coaching has been a home of wide-open opportunities for me since I got here. It has also been a life changing school. My experience here has been
+                                        really wonderful.
+                                    </p>
+                                </div>
+                                <p class="testimonial-slider__button"><b>Amed Shege</b></p>
+                            </div>
+                        </div>
+                        <div class="testimonial-slider__item swiper-slide">
+                            <div class="testimonial-slider__img">
+                                <img src="./assests/images/testimonials/testimonial-6.jpg" alt="" />
+                            </div>
+                            <div class="testimonial-slider__content">
+                                <span class="testimonial-slider__code">
+                                    <p><b>US National Security</b></p>
+                                </span>
+                                <div class="testimonial-slider__title p-0">
+                                    <p class="lead">Cyber Security Engineer</p>
+                                </div>
+                                <div class="testimonial-slider__text">
+                                    <p>
+                                        This course was the best decision I have ever made. It has given me a chance to have a career in a subject I love, and it’s given me more confidence in myself
+                                        and my ability to succeed.
+                                    </p>
+                                </div>
+                                <p class="testimonial-slider__button"><b>Nicole Scherzinger</b></p>
+                            </div>
+                        </div>
+                        <div class="testimonial-slider__item swiper-slide">
+                            <div class="testimonial-slider__img">
+                                <img src="./assests/images/testimonials/testimonial-7.jpg" alt="" />
+                            </div>
+                            <div class="testimonial-slider__content">
+                                <span class="testimonial-slider__code">
+                                    <p><b>Senior Manager</b></p>
+                                </span>
+                                <div class="testimonial-slider__title p-0">
+                                    <p class="lead">Amazon Inc.</p>
+                                </div>
+                                <div class="testimonial-slider__text">
+                                    <p>
+                                        Studying at Excellent Coaching has improved me in my choosen career and has given me the tools, knowledge and background to win in the media business and its
+                                        evolving market.
+                                    </p>
+                                </div>
+                                <p class="testimonial-slider__button"><b>Daren Llyod</b></p>
+                            </div>
+                        </div>
+                        <div class="testimonial-slider__item swiper-slide">
+                            <div class="testimonial-slider__img">
+                                <img src="./assests/images/testimonials/testimonial-8.jpg" alt="" />
+                            </div>
+                            <div class="testimonial-slider__content">
+                                <span class="testimonial-slider__code">
+                                    <p><b>Graduate (Class of 2020)</b></p>
+                                </span>
+                                <div class="testimonial-slider__title p-0">
+                                    <p class="lead">Computing Technology</p>
+                                </div>
+                                <div class="testimonial-slider__text">
+                                    <p>
+                                        The staff are very supportive and that was important as I was applying from overseas. The facilities offer a quiet and supportive place to study and the
+                                        enviroment is lively with lots of activities.
+                                    </p>
+                                </div>
+                                <p class="testimonial-slider__button"><b>Cynthia Peroti</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slider__pagination"></div>
+                </div>
+            </section>
+            <!-- END OF TESTMONIAL SECTION -->
+
+            <!-- BEGINING OF  PARTNERS SECTION -->
+            <section id="partners" class="container-fluid">
+                <div class="container text-center my-5">
+                    <div class="row py-5" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                        <h1>
+                            <b>OU<span class="uLine_orange">R PARTN</span>ERS</b>
+                        </h1>
+                    </div>
+                    <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">We collaborate With 100+ leading universitites and companies.</p>
+                    <div class="row py-5 partner-list">
+                        <div class="col-12">
+                            <img src="./assests/images/partners/partner-1.png" alt="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" />
+                            <img src="./assests/images/partners/partner-2.png" alt="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600" />
+                            <img src="./assests/images/partners/partner-3.png" alt="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700" />
+                            <img src="./assests/images/partners/partner-4.png" alt="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800" width="190px" />
+                            <img src="./assests/images/partners/partner-5.png" alt="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900" />
+                            <img src="./assests/images/partners/partner-6.png" alt="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END OF  PARTNERS SECTION -->
+        </main>
+        <!--------- END OF MAIN ------------------------->
+
+        <!-- BEGINING OF FOOTER -->
+        <footer id="footer" class="container-fluid">
+            <div class="container">
+                <section class="pt-5 pb-2 my-auto">
+                    <div class="row g-5">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="row text-center">
+                                <!-- QUICK NAVIGATION LINKS -->
+                                <div class="col-6">
+                                    <h5 class="my-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                                        <b>QU<span class="uLine_orange">ICK LIN</span>KS</b>
+                                    </h5>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item mb-4"><a href="./index.html" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">Home</a></li>
+                                        <li class="nav-item mb-4"><a href="./about.html" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">About Us</a></li>
+                                        <li class="nav-item mb-4"><a href="./computing-tech.html" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Courses</a></li>
+                                        <li class="nav-item mb-4"><a href="./registration.html" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">Register</a></li>
+                                        <li class="nav-item mb-4">
+                                            <a href="./about.html#faculties" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700">Faculties</a>
+                                        </li>
+                                        <li class="nav-item mb-4"><a href="./contact.html" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">Contact Us</a></li>
+                                        <li class="nav-item mb-4">
+                                            <a href="./contact.html#locationMap" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">Locate Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- QUICK NAVIGATION LINKS -->
+
+                                <!-- COURSES LINKS -->
+                                <div class="col-6">
+                                    <h5 class="my-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                                        <b>OU<span class="uLine_orange">R COURS</span>ES</b>
+                                    </h5>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item mb-4"><a href="./courses.html" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">All Courses</a></li>
+                                        <li class="nav-item mb-4">
+                                            <a href="./business-mgt.html" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">Business Management</a>
+                                        </li>
+                                        <li class="nav-item mb-4">
+                                            <a href="./project-mgt.html" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Project Management</a>
+                                        </li>
+                                        <li class="nav-item mb-4">
+                                            <a href="./artificial-intelligence.html" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">Artificial Intelligence</a>
+                                        </li>
+                                        <li class="nav-item mb-4">
+                                            <a href="./computing-tech.html" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700">Computing Technology</a>
+                                        </li>
+                                        <li class="nav-item mb-4">
+                                            <a href="./cyber-security.html" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">Cyber Security</a>
+                                        </li>
+                                        <li class="nav-item mb-4">
+                                            <a href="./data-science.html" class="nav-link p-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">Data Science</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- COURSES LINKS -->
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6">
+                            <!-- NEWSLETTER SUBSCRIBE -->
+                            <form class="form-row">
+                                <h5 class="my-4 text-center" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                                    <b>Subscrib<span class="uLine_orange">e To Our N</span>ewsletter</b>
+                                </h5>
+                                <p class="nav_text mb-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Monthly digest of whats new and exciting from us.</p>
+                                <div class="d-flex w-100 gap-2">
+                                    <label for="newsletter" class="visually-hidden" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">Email address</label>
+                                    <input id="newsletter" type="text" class="mb-4 form-control" placeholder="Email address" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700" />
+                                    <button class="btn btn_orange text-white mb-4" id="toastBtn" type="button" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">Subscribe</button>
+                                </div>
+
+                                <!-- NEWSLETTER SUBSCRIPTION TOAST MESSAGE -->
+                                <section id="toast_section" class="toast-container position-absolute bottom-0 start-0 p-3">
+                                    <div class="toast align-items-center bg_theme" role="alert" id="toast" aria-live="assertive" aria-atomic="true">
+                                        <div class="d-flex">
+                                            <div class="toast-header mt-0">
+                                                <i class="far fa-newspaper"></i>
+                                            </div>
+                                            <div class="toast-body">
+                                                <p class="mb-0">
+                                                    <b>Thank You for subscribing to our newsletter. Please check your email for news and updaates.</b>
+                                                </p>
+                                            </div>
+                                            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- NEWSLETTER SUBSCRIPTION TOAST MESSAGE -->
+                            </form>
+                            <!-- NEWSLETTER SUBSCRIBE -->
+
+                            <!-- SOCIAL MEDIA LINKS -->
+                            <div class="row py-4 text-center">
+                                <h5 class="my-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">
+                                    <b class="text-muted">connect <span class="uLine_orange">with us on so</span>cial media</b>
+                                </h5>
+
+                                <!-- BEGINING OF MAIL  US, INSTAGRAM & FACEBOOK LINKS -->
+                                <ul class="col-sm-12 col-md-6 list-unstyled socials d-flex flex-wrap justify-content-around align-items-center">
+                                    <li class="mx-2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
+                                        <a class="social_link" href="mailto:excellentcoaching@gmail.com?subject=Enquiries">
+                                            <i class="far fa-envelope"></i>
+                                            <small class="d-block text-gray">
+                                                <b>Mail Us</b>
+                                            </small>
+                                        </a>
+                                    </li>
+                                    <li class="mx-2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1100">
+                                        <a class="social_link" href="https://instagram.com/mayne_eltana" target="_blank" rel="noopener noreferrer">
+                                            <i class="fab fa-instagram"></i>
+                                            <small class="d-block text-gray">
+                                                <b>Instagram</b>
+                                            </small>
+                                        </a>
+                                    </li>
+                                    <li class="mx-2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200">
+                                        <a class="social_link" href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
+                                            <i class="fab fa-facebook-f"></i>
+                                            <small class="d-block text-gray">
+                                                <b>Facebook</b>
+                                            </small>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- END OF MAIL  US, INSTAGRAM & FACEBOOK LINKS -->
+
+                                <!-- BEGINING OF CALL  US, TWITTER & DISCORD LINKS -->
+                                <ul class="col-sm-12 col-md-6 list-unstyled socials d-flex flex-wrap justify-content-around align-items-center">
+                                    <li class="mx-2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300">
+                                        <a class="social_link" href="tel:+2348066678889">
+                                            <i class="fas fa-phone"></i>
+                                            <small class="d-block text-gray">
+                                                <b>Call Us</b>
+                                            </small>
+                                        </a>
+                                    </li>
+                                    <li class="mx-2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400">
+                                        <a class="social_link" href="https://twitter.com/mayne_eltana" target="_blank" rel="noopener noreferrer">
+                                            <i class="fab fa-twitter"></i>
+                                            <small class="d-block text-gray">
+                                                <b>Twitter</b>
+                                            </small>
+                                        </a>
+                                    </li>
+                                    <li class="mx-2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500">
+                                        <a class="social_link" href="https://discord.com/" target="blank" rel="noreferrer rnoopener">
+                                            <i class="fab fa-discord"></i>
+                                            <small class="d-block text-gray">
+                                                <b>Discord</b>
+                                            </small>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- END OF CALL  US, TWITTER & DISCORD LINKS -->
+                            </div>
+                            <!-- SOCIAL MEDIA LINKS -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- FOOTER SMALL & COPYRIGHT -->
+            <div class="py-4 mt-4 border-top text-center footer_small">
+                <p class="pt-4">
+                    &copy; 2021 <span><a class="footer_org" href="./index.html">Excellent Coaching</a></span
+                    >, Inc. All rights reserved.
+                </p>
+            </div>
+            <!-- FOOTER SMALL & COPYRIGHT -->
+        </footer>
+        <!-- END OF FOOTER -->
+
+        <!-- SCRIPTS -->
+        <script src="./assests/vendors/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+        <script src="./assests/vendors/popper.Js-2.x/popper.js"></script>
+        <script src="./assests/vendors/JQuery/jquery-3.5.1/jquery-v3.5.1.js"></script>
+        <script src="./assests/vendors/fontawesome-5.15.4/js/all.js"></script>
+        <script src="./assests/vendors/aos/aosV2.3.1.js"></script>
+        <script src="./assests/vendors/tilt.js-master/dest/tilt.jquery.js"></script>
+        <script src="./assests/vendors/swiper-Js/swiper.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script> -->
+        <script src="./assests/scripts/index.js"></script>
+        <script src="./assests/scripts/testimonial.js"></script>
+    </body>
+</html>

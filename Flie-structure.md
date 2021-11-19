@@ -1,0 +1,61 @@
+PROJECT - EXCELLENT COACHING WEBSITE Folder
+    -assets folder
+        --css folder
+            ---about.css file 
+            ---contact.css file 
+            ---courses.css file 
+            ---style.css file 
+            ---testimanial.css file 
+        --downloads folder
+            ---Excellent-Coaching-AI.docx
+            ---Excellent-Coaching-Business-Mgt.docx
+            ---Excellent-Coaching-Computing-Tech.docx
+            ---Excellent-Coaching-Cyber-Security.docx
+            ---Excellent-Coaching-Data-Science.docx
+            ---Excellent-Coaching-Project-Mgt.docx
+            ---Excellent-Coaching-Price-List-2021-2022.docx
+            ---Excellent-Coaching-Price-List-2022-2023.docx
+        --fonts-poppins folder
+            ---OFL.txt
+            ---Poppins-Black.ttf
+            ---Poppins-Bold.ttf
+            ---Poppins-ExtraBold.ttf
+            ---Poppins-ExtraLight.ttf
+            ---Poppins-Italic.ttf
+            ---Poppins-Light.ttf
+            ---Poppins-Medium.ttf
+            ---Poppins-Regular.ttf
+            ---Poppins-SemiBold.ttf
+            ---Poppins-Thin.ttf
+        --images folder
+            ---common files
+            ---about-us folder
+            ---contact-us folder
+            ---courses folder
+            ---partners folder
+            ---testimonials folder
+        --scripts folder
+            ---index.js
+            ---testimonial.js
+        --vendors folder
+            ---aos folder
+            ---bootstrap-5.1.3-dist folder
+            ---fontawesome-5.1.5.4 folder
+            ---JQuery folder
+            ---popper.Js-2x folder
+            ---Swiper-Js folder
+            ---tilt-Js folder
+        --videos folder
+            ---intro-vid.mp4
+    -file-structure.md file
+    -about.html flie
+    -artificial-intelligence.html flie
+    -business-mgt.html flie
+    -computing-tech.html flie
+    -contact.html flie
+    -courses.html flie
+    -cyber-security.html flie
+    -data-science.html flie
+    -index.html flie
+    -project-mgt.html flie
+    -registration.html flie
