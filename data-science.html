@@ -24,117 +24,157 @@
     <title>Excellent Coaching | Data Science</title>
 </head>
 
-<body>
-        <!-- BEGINING OF HEADER -->
-        <header id="header" class="sticky-top">
+<body class="no-scroll-y">
+    <!-- BEGINING OF PRE-LOADER -->
+    <section id="preloader">
+        <div id="ctn-preloader" class="ctn-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
+                <div class="txt-loading">
+                    <span data-text-preloader="L" class="letters-loading">
+                        L
+                    </span>
 
-            <!-------------------------BEGINING OF NAV BAR------------------>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <!-- NAV BRAND/LOGO -->
-                    <a class="navbar-brand" href="./index.html" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
-                        <img data-tilt src="./assests/images/logo.png" alt="logo" />
-                    </a>
-                    <!-- NAV BRAND/LOGO -->
+                    <span data-text-preloader="O" class="letters-loading">
+                        O
+                    </span>
 
-                    <!-- BEGING OF HAMBURGER BUTTON -->
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapsibleMenu"
-                        aria-controls="collapsibleMenu"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span>
-                            <img src="./assests/images/hamburger.svg" alt="menu" class="img-fluid" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" />
-                        </span>
-                    </button>
-                    <!-- END OF HAMBURGER BUTTON -->
+                    <span data-text-preloader="A" class="letters-loading">
+                        A
+                    </span>
 
-                    <!-- BEGINING OF COLLAPSIBLE NAVIGATION AREA -->
-                    <div class="navbar-collapse collapse" id="collapsibleMenu">
-                        <ul class="nav navbar-nav navbar__list ms-auto">
-                            <!-- HOME NAVIGATION LINK -->
-                            <li class="nav-item navbar__item mx-auto">
-                                <a href="./index.html" class="nav-link navbar__link">
-                                    <b class="bold">Home</b>
-                                </a>
-                            </li>
-                            <!-- HOME NAVIGATION LINK -->
+                    <span data-text-preloader="D" class="letters-loading">
+                        D
+                    </span>
 
-                            <!-- ABOUT NAVIGATION LINKS -->
-                            <li class="nav-item dropdown navbar__item mx-auto">
-                                <span class="nav-link navbar__link mx-4 dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <b class="bold">About Us</b>
-                                </span>
-                                <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="./about.html">About Us</a></li>
-                                    <li><a class="dropdown-item" href="./about.html#faculties">Faculties</a></li>
-                                    <li><a class="dropdown-item" href="./index.html#testimonial">Testimonial</a></li>
-                                </ul>
-                            </li>
-                            <!-- ABOUT NAVIGATION LINKS -->
+                    <span data-text-preloader="I" class="letters-loading">
+                        I
+                    </span>
 
-                            <!-- COURSES NAVIGATION LINKS -->
-                            <li class="nav-item dropdown navbar__item mx-auto">
-                                <span class="nav-link navbar__link navbar__link-active mx-4 dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <b class="bold">Courses</b>
-                                </span>
-                                <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="./courses.html">All Courses</a></li>
-                                    <li><a class="dropdown-item" href="./business-mgt.html">Business Management</a></li>
-                                    <li><a class="dropdown-item" href="./project-mgt.html">Project Management</a></li>
-                                    <li><a class="dropdown-item" href="./artificial-intelligence.html">Artificial Intelligence</a></li>
-                                    <li><a class="dropdown-item" href="./computing-tech.html">Computing Technology</a></li>
-                                    <li><a class="dropdown-item" href="./cyber-security.html">Cyber Security</a></li>
-                                    <li><a class="dropdown-item" href="./data-science.html">Data Science</a></li>
-                                    <li"><a class="dropdown-item" href="./registration.html">Course Registration</a></li>
-                                </ul>
-                            </li>
-                            <!-- COURSES NAVIGATION LINKS -->
+                    <span data-text-preloader="N" class="letters-loading">
+                        N
+                    </span>
 
-                            <!-- CONTACT & LOCATION NAVIGATION LINKS -->
-                            <li class="nav-item navbar__item mx-auto">
-                                <a href="./contact.html" class="nav-link navbar__link">
-                                    <b class="bold">Contact Us</b>
-                                </a>
-                            </li>
-                            <li class="nav-item navbar__item mx-auto btn btn_orange" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">
-                                <a href="./contact.html#locationMap" class="nav-link navbar__link text-white">
-                                    <b class="bold">Locate Us</b>
-                                </a>
-                            </li>
-                            <!-- CONTACT & LOCATION NAVIGATION LINKS -->
-                        </ul>
-                    </div>
-                    <!-- END OF COLLAPSIBLE NAVIGATION AREA -->
+                    <span data-text-preloader="G" class="letters-loading">
+                        G
+                    </span>
                 </div>
-            </nav>
-            <!-------------------------END OF NAV BAR----------------------->
-            
-            <!-- NEWSLETTER SUBSCRIPTION TOAST MESSAGE -->
-            <section id="toast_section" class="toast-container position-absolute top-20 end-0 p-3">
-                <div class="toast align-items-center bg_theme" role="alert" id="toast" aria-live="assertive" aria-atomic="true">
-                    <div class="d-flex">
-                        <div class="toast-header mt-0">
-                            <i class="far fa-newspaper"></i>                        
-                        </div>
-                        <div class="toast-body">
-                            <p class="mb-0">
-                                <b>Thank You for subscribing to our newsletter. Please check your email for news and updaates.</b> 
-                            </p>
-                        </div>
-                        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-                    </div>
+            </div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+    </section>
+    <!-- BEGINING OF PRE-LOADER -->
+
+    <!-- BEGINING OF HEADER -->
+    <header id="header" class="sticky-top">
+
+        <!-------------------------BEGINING OF NAV BAR------------------>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- NAV BRAND/LOGO -->
+                <a class="navbar-brand" href="./index.html" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
+                    <img data-tilt src="./assests/images/logo.png" alt="logo" />
+                </a>
+                <!-- NAV BRAND/LOGO -->
+
+                <!-- BEGING OF HAMBURGER BUTTON -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleMenu"
+                    aria-controls="collapsibleMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span>
+                        <img src="./assests/images/hamburger.svg" alt="menu" class="img-fluid" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" />
+                    </span>
+                </button>
+                <!-- END OF HAMBURGER BUTTON -->
+
+                <!-- BEGINING OF COLLAPSIBLE NAVIGATION AREA -->
+                <div class="navbar-collapse collapse" id="collapsibleMenu">
+                    <ul class="nav navbar-nav navbar__list ms-auto">
+                        <!-- HOME NAVIGATION LINK -->
+                        <li class="nav-item navbar__item mx-auto">
+                            <a href="./index.html" class="nav-link navbar__link">
+                                <b class="bold">Home</b>
+                            </a>
+                        </li>
+                        <!-- HOME NAVIGATION LINK -->
+
+                        <!-- ABOUT NAVIGATION LINKS -->
+                        <li class="nav-item dropdown navbar__item mx-auto">
+                            <span class="nav-link navbar__link mx-4 dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <b class="bold">About Us</b>
+                            </span>
+                            <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./about.html">About Us</a></li>
+                                <li><a class="dropdown-item" href="./about.html#faculties">Faculties</a></li>
+                                <li><a class="dropdown-item" href="./index.html#testimonial">Testimonial</a></li>
+                            </ul>
+                        </li>
+                        <!-- ABOUT NAVIGATION LINKS -->
+
+                        <!-- COURSES NAVIGATION LINKS -->
+                        <li class="nav-item dropdown navbar__item mx-auto">
+                            <span class="nav-link navbar__link navbar__link-active mx-4 dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <b class="bold">Courses</b>
+                            </span>
+                            <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./courses.html">All Courses</a></li>
+                                <li><a class="dropdown-item" href="./business-mgt.html">Business Management</a></li>
+                                <li><a class="dropdown-item" href="./project-mgt.html">Project Management</a></li>
+                                <li><a class="dropdown-item" href="./artificial-intelligence.html">Artificial Intelligence</a></li>
+                                <li><a class="dropdown-item" href="./computing-tech.html">Computing Technology</a></li>
+                                <li><a class="dropdown-item" href="./cyber-security.html">Cyber Security</a></li>
+                                <li><a class="dropdown-item" href="./data-science.html">Data Science</a></li>
+                                <li"><a class="dropdown-item" href="./registration.html">Course Registration</a></li>
+                            </ul>
+                        </li>
+                        <!-- COURSES NAVIGATION LINKS -->
+
+                        <!-- CONTACT & LOCATION NAVIGATION LINKS -->
+                        <li class="nav-item navbar__item mx-auto">
+                            <a href="./contact.html" class="nav-link navbar__link">
+                                <b class="bold">Contact Us</b>
+                            </a>
+                        </li>
+                        <li class="nav-item navbar__item mx-auto btn btn_orange" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">
+                            <a href="./contact.html#locationMap" class="nav-link navbar__link text-white">
+                                <b class="bold">Locate Us</b>
+                            </a>
+                        </li>
+                        <!-- CONTACT & LOCATION NAVIGATION LINKS -->
+                    </ul>
                 </div>
-            </section>
-            <!-- NEWSLETTER SUBSCRIPTION TOAST MESSAGE -->
-    
-        </header>
-        <!-- END OF HEADER -->
-    
+                <!-- END OF COLLAPSIBLE NAVIGATION AREA -->
+            </div>
+        </nav>
+        <!-------------------------END OF NAV BAR----------------------->
+        
+        <!-- NEWSLETTER SUBSCRIPTION TOAST MESSAGE -->
+        <section id="toast_section" class="toast-container position-absolute top-20 end-0 p-3">
+            <div class="toast align-items-center bg_theme" role="alert" id="toast" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-header mt-0">
+                        <i class="far fa-newspaper"></i>                        
+                    </div>
+                    <div class="toast-body">
+                        <p class="mb-0">
+                            <b>Thank You for subscribing to our newsletter. Please check your email for news and updaates.</b> 
+                        </p>
+                    </div>
+                    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+            </div>
+        </section>
+        <!-- NEWSLETTER SUBSCRIPTION TOAST MESSAGE -->
+
+    </header>
+    <!-- END OF HEADER -->
 
     <main id="main" class="container">
         <!-- BEGINING OF HERO SECTION -->
