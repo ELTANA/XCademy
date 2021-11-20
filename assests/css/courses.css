@@ -128,11 +128,13 @@ body {
     line-height: 2.2rem;
 }
 
-.navbar__link {
+.navbar__link,
+.navbar__link:visited {
     color: var(--v-dark-color);
 }
 
-.navbar__link:hover {
+.navbar__link:hover,
+.navbar__link:focus {
     color: var(--orange-color);
     transition: all 300ms ease-in;
 }
