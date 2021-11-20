@@ -104,7 +104,7 @@ window.addEventListener("resize", function () {
 });
 
 // PRE LOADER
-$(document).ready(function () {
+window.addEventListener("load", function () {
     setTimeout(function () {
         $("#ctn-preloader").addClass("loaded");
         $("body").removeClass("no-scroll-y");
@@ -118,6 +118,20 @@ $(document).ready(function () {
         }
     }, 3000);
 });
+// $(document).ready(function () {
+//     setTimeout(function () {
+//         $("#ctn-preloader").addClass("loaded");
+//         $("body").removeClass("no-scroll-y");
+
+//         if ($("#ctn-preloader").hasClass("loaded")) {
+//             $("#preloader")
+//                 .delay(1000)
+//                 .queue(function () {
+//                     $(this).remove();
+//                 });
+//         }
+//     }, 3000);
+// });
 
 // GOOGLE MAP API
 // let map;
