@@ -46,7 +46,7 @@ function initMap() {
     });
 }
 
-// Clear Input Field On Submit
+// CLEAR INPUT FIELDS ON SUBMIT
 const footerForm = document.querySelector("footer .btn");
 const FormInput = document.querySelector("#newsletter");
 footerForm.addEventListener("click", function (e) {
@@ -59,16 +59,7 @@ const course_registration = document.querySelector("#course_registration");
 const footerHeaderUnderline = document.querySelectorAll("footer .uLine_orange");
 
 window.addEventListener("resize", function () {
-    if (window.innerWidth < 992) {
-        // console.log("yes");
-        course_registration.classList.remove("g-5");
-    } else {
-        course_registration.classList.add("g-5");
-    }
-});
-
-window.addEventListener("load", function () {
-    // Remove Gutter in form on small screens
+    // REMOVE GUTTERS IN FORM SECTION ON MEDIUM SCREEN BELOW
     if (window.innerWidth < 992) {
         // console.log("yes");
         course_registration.classList.remove("g-5");
@@ -76,21 +67,7 @@ window.addEventListener("load", function () {
         course_registration.classList.add("g-5");
     }
 
-    // Remove Orange Undeline in Social Links for small screens
-    console.log(footerHeaderUnderline);
-    if (window.innerWidth < 395 || window.innerWidth < 321) {
-        // console.log("yes");
-        footerHeaderUnderline.forEach((element) => {
-            element.style.textDecoration = "none";
-        });
-    } else {
-        footerHeaderUnderline.forEach((element) => {
-            element.style.textDecoration = "3px solid #ff6622 underline";
-        });
-    }
-});
-
-window.addEventListener("resize", function () {
+    // REMOVE ORANGE UNDERLINE IN FOOTER LINKS HEADERS FOR SMALL SCREENS
     if (window.innerWidth < 395) {
         // console.log("yes");
         footerHeaderUnderline.forEach((element) => {
@@ -103,8 +80,8 @@ window.addEventListener("resize", function () {
     }
 });
 
-// PRE LOADER
 window.addEventListener("load", function () {
+    // PRELOADER TIME-OUT
     setTimeout(function () {
         $("#ctn-preloader").addClass("loaded");
         $("body").removeClass("no-scroll-y");
@@ -117,7 +94,57 @@ window.addEventListener("load", function () {
                 });
         }
     }, 3000);
+
+    // REMOVE GUTTERS IN FORM SECTION ON MEDIUM SCREEN BELOW
+    if (window.innerWidth < 992) {
+        // console.log("yes");
+        course_registration.classList.remove("g-5");
+    } else {
+        course_registration.classList.add("g-5");
+    }
+
+    // REMOVE ORANGE UNDERLINE IN FOOTER LINKS HEADERS FOR SMALL SCREENS
+    // console.log(footerHeaderUnderline);
+    if (window.innerWidth < 395 || window.innerWidth < 321) {
+        // console.log("yes");
+        footerHeaderUnderline.forEach((element) => {
+            element.style.textDecoration = "none";
+        });
+    } else {
+        footerHeaderUnderline.forEach((element) => {
+            element.style.textDecoration = "3px solid #ff6622 underline";
+        });
+    }
 });
+
+// window.addEventListener("resize", function () {
+//     if (window.innerWidth < 395) {
+//         // console.log("yes");
+//         footerHeaderUnderline.forEach((element) => {
+//             element.style.textDecoration = "none";
+//         });
+//     } else {
+//         footerHeaderUnderline.forEach((element) => {
+//             element.style.textDecoration = "3px solid #ff6622 underline";
+//         });
+//     }
+// });
+
+// PRE LOADER
+// window.addEventListener("load", function () {
+//     setTimeout(function () {
+//         $("#ctn-preloader").addClass("loaded");
+//         $("body").removeClass("no-scroll-y");
+
+//         if ($("#ctn-preloader").hasClass("loaded")) {
+//             $("#preloader")
+//                 .delay(1000)
+//                 .queue(function () {
+//                     $(this).remove();
+//                 });
+//         }
+//     }, 3000);
+// });
 // $(document).ready(function () {
 //     setTimeout(function () {
 //         $("#ctn-preloader").addClass("loaded");
