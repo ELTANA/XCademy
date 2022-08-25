@@ -1,121 +1,121 @@
 // INITIALIZE ANIAMTE ON SCROLL
-AOS.init();
+AOS.init()
 
 // TESTIMONIAL SLIDER SWIPE
-$(".count").each(function () {
-    $(this)
-        .prop("Counter", 0)
-        .animate(
-            {
-                Counter: $(this).text(),
-            },
-            {
-                duration: 4000,
-                easing: "swing",
-                step: function (now) {
-                    $(this).text(Math.ceil(now));
-                },
-            }
-        );
-});
+$('.count').each(function () {
+  $(this)
+    .prop('Counter', 0)
+    .animate(
+      {
+        Counter: $(this).text(),
+      },
+      {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+          $(this).text(Math.ceil(now))
+        },
+      }
+    )
+})
 
 // Toast on Form Submission
-const toastTrigger = document.getElementById("toastBtn");
-const toastLive = document.getElementById("toast");
+const toastTrigger = document.getElementById('toastBtn')
+const toastLive = document.getElementById('toast')
 if (toastTrigger) {
-    toastTrigger.addEventListener("click", function () {
-        const toast = new bootstrap.Toast(toastLive);
+  toastTrigger.addEventListener('click', function () {
+    const toast = new bootstrap.Toast(toastLive)
 
-        toast.show();
-    });
+    toast.show()
+  })
 }
 
 // Initialize and add the map
 function initMap() {
-    // The location of excellentCoaching
-    const excellentCoaching = { lat: 51.517865, lng: -0.143753 };
-    // The map, centered at excellentCoaching
-    const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 15,
-        center: excellentCoaching,
-    });
-    // The marker, positioned at excellentCoaching
-    const marker = new google.maps.Marker({
-        position: excellentCoaching,
-        map: map,
-    });
+  // The location of excellentCoaching
+  const excellentCoaching = { lat: 51.517865, lng: -0.143753 }
+  // The map, centered at excellentCoaching
+  const map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 15,
+    center: excellentCoaching,
+  })
+  // The marker, positioned at excellentCoaching
+  const marker = new google.maps.Marker({
+    position: excellentCoaching,
+    map: map,
+  })
 }
 
 // CLEAR INPUT FIELDS ON SUBMIT
-const footerForm = document.querySelector("footer .btn");
-const FormInput = document.querySelector("#newsletter");
-footerForm.addEventListener("click", function (e) {
-    e.preventDefault();
+const footerForm = document.querySelector('footer .btn')
+const FormInput = document.querySelector('#newsletter')
+footerForm.addEventListener('click', function (e) {
+  e.preventDefault()
 
-    FormInput.value = "";
-});
+  FormInput.value = ''
+})
 
-const course_registration = document.querySelector("#course_registration");
-const footerHeaderUnderline = document.querySelectorAll("footer .uLine_orange");
+const course_registration = document.querySelector('#course_registration')
+const footerHeaderUnderline = document.querySelectorAll('footer .uLine_orange')
 
-window.addEventListener("resize", function () {
-    // REMOVE GUTTERS IN FORM SECTION ON MEDIUM SCREEN BELOW
-    if (window.innerWidth < 992) {
-        // console.log("yes");
-        course_registration.classList.remove("g-5");
-    } else {
-        course_registration.classList.add("g-5");
+window.addEventListener('resize', function () {
+  // REMOVE GUTTERS IN FORM SECTION ON MEDIUM SCREEN BELOW
+  if (window.innerWidth < 992) {
+    // console.log("yes");
+    course_registration.classList.remove('g-5')
+  } else {
+    course_registration.classList.add('g-5')
+  }
+
+  // REMOVE ORANGE UNDERLINE IN FOOTER LINKS HEADERS FOR SMALL SCREENS
+  if (window.innerWidth < 395) {
+    // console.log("yes");
+    footerHeaderUnderline.forEach(element => {
+      element.style.textDecoration = 'none'
+    })
+  } else {
+    footerHeaderUnderline.forEach(element => {
+      element.style.textDecoration = '3px solid #ff6622 underline'
+    })
+  }
+})
+
+window.addEventListener('load', function () {
+  // PRELOADER TIME-OUT
+  setTimeout(function () {
+    $('#ctn-preloader').addClass('loaded')
+    $('body').removeClass('no-scroll-y')
+
+    if ($('#ctn-preloader').hasClass('loaded')) {
+      $('#preloader')
+        .delay(1000)
+        .queue(function () {
+          $(this).remove()
+        })
     }
+  }, 1000)
 
-    // REMOVE ORANGE UNDERLINE IN FOOTER LINKS HEADERS FOR SMALL SCREENS
-    if (window.innerWidth < 395) {
-        // console.log("yes");
-        footerHeaderUnderline.forEach((element) => {
-            element.style.textDecoration = "none";
-        });
-    } else {
-        footerHeaderUnderline.forEach((element) => {
-            element.style.textDecoration = "3px solid #ff6622 underline";
-        });
-    }
-});
+  // REMOVE GUTTERS IN FORM SECTION ON MEDIUM SCREEN BELOW
+  if (window.innerWidth < 992) {
+    // console.log("yes");
+    course_registration.classList.remove('g-5')
+  } else {
+    course_registration.classList.add('g-5')
+  }
 
-window.addEventListener("load", function () {
-    // PRELOADER TIME-OUT
-    setTimeout(function () {
-        $("#ctn-preloader").addClass("loaded");
-        $("body").removeClass("no-scroll-y");
-
-        if ($("#ctn-preloader").hasClass("loaded")) {
-            $("#preloader")
-                .delay(1000)
-                .queue(function () {
-                    $(this).remove();
-                });
-        }
-    }, 3000);
-
-    // REMOVE GUTTERS IN FORM SECTION ON MEDIUM SCREEN BELOW
-    if (window.innerWidth < 992) {
-        // console.log("yes");
-        course_registration.classList.remove("g-5");
-    } else {
-        course_registration.classList.add("g-5");
-    }
-
-    // REMOVE ORANGE UNDERLINE IN FOOTER LINKS HEADERS FOR SMALL SCREENS
-    // console.log(footerHeaderUnderline);
-    if (window.innerWidth < 395 || window.innerWidth < 321) {
-        // console.log("yes");
-        footerHeaderUnderline.forEach((element) => {
-            element.style.textDecoration = "none";
-        });
-    } else {
-        footerHeaderUnderline.forEach((element) => {
-            element.style.textDecoration = "3px solid #ff6622 underline";
-        });
-    }
-});
+  // REMOVE ORANGE UNDERLINE IN FOOTER LINKS HEADERS FOR SMALL SCREENS
+  // console.log(footerHeaderUnderline);
+  if (window.innerWidth < 395 || window.innerWidth < 321) {
+    // console.log("yes");
+    footerHeaderUnderline.forEach(element => {
+      element.style.textDecoration = 'none'
+    })
+  } else {
+    footerHeaderUnderline.forEach(element => {
+      element.style.textDecoration = '3px solid #ff6622 underline'
+    })
+  }
+})
 
 // window.addEventListener("resize", function () {
 //     if (window.innerWidth < 395) {
