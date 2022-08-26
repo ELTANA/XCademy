@@ -197,11 +197,15 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
 }
+
+.intro-vid {
+  display: block;
+}
 /* INTRO VIDEO SECTION */
 
 /* BEGINING OF NAVIGATION BAR */
 .navbar {
-  transform: translateY(-6.5px);
+  min-height: 10vh;
   background-color: var(--sec-bg-color);
   box-shadow: 0rem 0.7rem 1.5rem var(--v-dark-color);
   -webkit-box-shadow: 0rem 0.7rem 1.5rem var(--v-dark-color);
