@@ -158,6 +158,10 @@ body {
   background-color: var(--sec-bg-color);
   color: var(--primary-color);
 }
+
+#locationMap {
+  scroll-margin-block-start: 8rem;
+}
 /* END OF LOCATION MAP SECTION */
 
 /* BEGINING OF ADDRESS INFORMATION SECTION */

@@ -269,6 +269,7 @@ body {
 /* BEGINING OF MAIN */
 #main {
   margin-block: 5rem;
+  scroll-margin-block-start: 10rem;
 }
 
 /* HEADER BACKGROUND */

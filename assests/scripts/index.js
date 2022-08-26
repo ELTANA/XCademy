@@ -88,20 +88,12 @@ window.addEventListener('load', function () {
 
     if ($('#ctn-preloader').hasClass('loaded')) {
       $('#preloader')
-        .delay(300)
+        .delay(100)
         .queue(function () {
           $(this).remove()
         })
     }
-  }, 300)
-
-  // REMOVE GUTTERS IN FORM SECTION ON MEDIUM SCREEN BELOW
-  if (window.innerWidth < 992) {
-    // console.log("yes");
-    course_registration.classList.remove('g-5')
-  } else {
-    course_registration.classList.add('g-5')
-  }
+  }, 100)
 
   // REMOVE ORANGE UNDERLINE IN FOOTER LINKS HEADERS FOR SMALL SCREENS
   // console.log(footerHeaderUnderline);

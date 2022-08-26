@@ -172,6 +172,10 @@ body {
   padding: 3rem;
 }
 
+#faculties {
+  scroll-margin-block-start: 10rem;
+}
+
 #board_members .card-body,
 #faculties .card-body {
   background-color: var(--secondary-color);
