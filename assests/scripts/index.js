@@ -32,16 +32,16 @@ if (toastTrigger) {
 
 // Initialize and add the map
 function initMap() {
-  // The location of excellentCoaching
-  const excellentCoaching = { lat: 51.517865, lng: -0.143753 }
-  // The map, centered at excellentCoaching
+  // The location of xCademy
+  const xCademy = { lat: 51.517865, lng: -0.143753 }
+  // The map, centered at xCademy
   const map = new google.maps.Map(document.getElementById('map'), {
     zoom: 15,
-    center: excellentCoaching,
+    center: xCademy,
   })
-  // The marker, positioned at excellentCoaching
+  // The marker, positioned at xCademy
   const marker = new google.maps.Marker({
-    position: excellentCoaching,
+    position: xCademy,
     map: map,
   })
 }
