@@ -88,12 +88,12 @@ window.addEventListener('load', function () {
 
     if ($('#ctn-preloader').hasClass('loaded')) {
       $('#preloader')
-        .delay(1000)
+        .delay(500)
         .queue(function () {
           $(this).remove()
         })
     }
-  }, 1000)
+  }, 500)
 
   // REMOVE GUTTERS IN FORM SECTION ON MEDIUM SCREEN BELOW
   if (window.innerWidth < 992) {
